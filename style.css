@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Bodoni', serif;
+}
+
+body {
+    background: linear-gradient(#2b1055, #7597de);
+    min-height: 100vh;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .logo:hover {
+    color: #e5ff00;
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color:#fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    position: relative;
+    padding-bottom: 50px;
+    background: url(img/tour.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+section h2 a {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+    font-size: 3em;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+section h2 a:hover {
+    color: #ffa000;
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;
+}
+
+.form {
+    position: relative;
+    background-color: #fff;
+    border: 2px;
+    border-radius: 30px;
+    box-shadow: 0 0 0 10px #fff;
+    height: 350px;
+    width: 420px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 350px;
+    margin-left: 720px;
+}
+
+.mainText {
+    font-size: 30px;
+    margin: 40px 0 5px p;
+    color: #030303;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.secondText {
+    font-size: 18px;
+    margin: 0;
+    color: #030303;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.formInput {
+    background: #f1f1f1;
+    height: 50px;
+    display: flex;
+    border-radius: 25% 10%;
+    padding: 15px;
+    width: 260px;
+    margin-left: 75px;
+}
+.formInput input {
+    flex: .9;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.pressed-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    font-style: italic;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+}
+.pressed-button:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+    border: none;
+    outline: none;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+.social,
+.menu2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.social li,
+.menu2 li{
+    list-style: none;
+}
+.social li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.menu2 li a {
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: #fff;
+    opacity: 0.75;
+    margin: 0 15px;
+    text-decoration: none;
+    display: flex;
+
+}
+.menu2 li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+
